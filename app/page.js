@@ -74,6 +74,18 @@ export default function Home() {
       <HeroHighlightComp />
       <HeroParallaxDemo />
       <Team />
+      <div className="bg-[#12071F]">
+        <div
+          className="visme_d border border-white"
+          data-title="Untitled Project"
+          data-url="epqkpkw1-untitled-project?fullPage=true"
+          data-domain="forms"
+          data-full-page="false"
+          data-min-height="80vh"
+          data-form-id="85021"
+        ></div>
+        <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+      </div>
     </div>
   );
 }

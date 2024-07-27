@@ -39,21 +39,21 @@ const members = [
 const Team = () => {
   return (
     <>
-      <div className="w-full px-5 md:px-11 lg:px-[200px] flex flex-col justify-center relative py-11">
+      <div className="w-full px-5 md:px-11 lg:px-[200px] flex flex-col justify-center relative bg-[#12071F]">
         <h1 className="text-[25px] lg:text-[40px] py-5 text-center">
           Team of
           <FlipWords words={teamTitle} />
         </h1>
         <TextGenerateEffect words={words} />
 
-        <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-5 z-10"></div>
+        {/* <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-5 z-10"></div> */}
       </div>
 
-      <div className="w-full px-5 md:px-11 lg:px-[200px] flex flex-col justify-center relative py-11 h-[600px]">
+      <div className="w-full flex flex-col justify-center relative py-11 bg-[#12071F]">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={5}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -64,21 +64,21 @@ const Team = () => {
           navigation={false}
           mousewheel={true}
           freeMode={{ enabled: true, sticky: true }}
-          modules={[Autoplay, Pagination, Navigation, Mousewheel, FreeMode]}
+          modules={[Autoplay, Navigation, Mousewheel, FreeMode]}
           loop={true}
           className="mySwiper w-full"
         >
           {members?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="border border-black rounded-xl w-full p-5 flex flex-col  space-y-3 text-black">
+              <div className="rounded-xl w-full p-5 flex flex-col  space-y-3 text-black items-center">
                 <img
                   src="/assests/team/abs.png"
                   alt="Photo"
-                  className=" object-cover w-full h-[300px] rounded-xl border"
+                  className="object-cover border aspect-square rounded-xl"
                 />
-                <div className="flex flex-col border border-black p-2 rounded-lg">
+                <div className="flex flex-col border border-[#fffcfcd0] p-2 rounded-lg items-center text-white w-full">
                   <h1 className="text-xl">{item.name}</h1>
-                  <span className="text-sm">{item.role}</span>
+                  <span className="text-[12px]">{item.role}</span>
                 </div>
               </div>
             </SwiperSlide>
