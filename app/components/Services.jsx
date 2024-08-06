@@ -68,6 +68,7 @@ const Services = () => {
       <div className="services pt-11 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 z-10">
         {services.map((item, index) => (
           <div
+            key={index}
             style={{ border: "0.5px solid white" }}
             className="service-box w-full min-h-[350px] lg:min-h-[200px] bg-[#ae98bc13] rounded-xl p-8 backdrop-blur-lg"
           >

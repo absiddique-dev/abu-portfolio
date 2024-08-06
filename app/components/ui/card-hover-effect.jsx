@@ -18,6 +18,7 @@ export const HoverEffect = ({ items, className }) => {
       <div className={cn("grid grid-cols-1 xl:grid-cols-2 py-10", className)}>
         {items.map((item, idx) => (
           <div
+            key={idx}
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}

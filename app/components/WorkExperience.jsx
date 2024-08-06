@@ -44,7 +44,10 @@ const WorkExperience = () => {
       <div className="work-details grid grid-cols-1 md:grid-cols-2 gap-5 z-10">
         {works.map((item, index) => {
           return (
-            <div className="w-full space-y-5 border min-h-[240px] h-full bg-[#1b0c2ba5] p-5 border-teal-100 rounded-xl">
+            <div
+              key={index}
+              className="w-full space-y-5 border min-h-[240px] h-full bg-[#1b0c2ba5] p-5 border-teal-100 rounded-xl"
+            >
               <div className="flex justify-between">
                 <div className="flex flex-col">
                   <p className="text-[20px]">{item.title}</p>
