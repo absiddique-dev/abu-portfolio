@@ -72,7 +72,7 @@ const WorkExperience = () => {
                 Developed and launched Optimus Tea's e-commerce website,
                 enhancing user experience and boosting online sales through
                 responsive design, SEO optimization, and robust e-commerce
-                functionalities.
+                functionalities
               </p>
               <div className="flex justify-between">
                 <span>Website</span>
