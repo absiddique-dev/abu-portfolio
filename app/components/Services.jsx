@@ -93,4 +93,3 @@ const Services = () => {
 };
 
 export default Services;
-Services;

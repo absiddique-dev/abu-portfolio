@@ -16,15 +16,15 @@ export const HoverEffect = ({ items, className }) => {
         <h1 className="text-[25px] lg:text-[40px] text-center">Services</h1>
       </div>
       <div className={cn("grid grid-cols-1 xl:grid-cols-2 py-10", className)}>
-        {items.map((item, idx) => (
+        {items.map((item, index) => (
           <div
-            key={idx}
+            key={index}
             className="relative group block p-2 h-full w-full"
-            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <AnimatePresence>
-              {hoveredIndex === idx && (
+              {hoveredIndex === index && (
                 <motion.span
                   className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"
