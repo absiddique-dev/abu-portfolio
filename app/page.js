@@ -13,6 +13,7 @@ import Team from "./custom-ui/Team";
 import Navbar from "./custom-ui/Navbar";
 import { TextGenerateEffectDemo } from "./custom-ui/TextGenerateEffect";
 import { WobbleCardDemo } from "./custom-ui/WobleCard";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -84,7 +85,7 @@ export default function Home() {
           data-min-height="80vh"
           data-form-id="85021"
         ></div>
-        <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+        <Script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></Script>
       </div>
     </div>
   );
