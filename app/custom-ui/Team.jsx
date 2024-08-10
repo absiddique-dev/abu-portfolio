@@ -17,7 +17,7 @@ import {
   FreeMode,
 } from "swiper/modules";
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
+const words = `A diverse group of skilled professionals united by a passion for excellence and innovation. We combine our unique talents to tackle challenges, drive progress, and deliver outstanding results in every project we undertake.
 `;
 
 const teamTitle = [
@@ -45,8 +45,6 @@ const Team = () => {
           <FlipWords words={teamTitle} />
         </h1>
         <TextGenerateEffect words={words} />
-
-        {/* <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-5 z-10"></div> */}
       </div>
 
       <div className="w-full flex flex-col justify-center relative py-11 bg-[#12071F]">
@@ -70,16 +68,24 @@ const Team = () => {
         >
           {members?.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-xl w-full p-5 flex flex-col  space-y-3 text-black items-center">
-                <img
-                  src="/assests/team/abs.png"
-                  alt="Photo"
-                  className="object-cover border aspect-square rounded-xl"
-                />
-                <div className="flex flex-col border border-[#fffcfcd0] p-2 rounded-lg items-center text-white w-full">
-                  <h1 className="text-xl">{item.name}</h1>
-                  <span className="text-[12px]">{item.role}</span>
+              <div className="rounded-xl w-full p-6 flex flex-col space-y-4 bg-white shadow-lg">
+                <div className="relative w-32 h-32 mx-auto">
+                  <img
+                    src="https://www.nicepng.com/png/detail/128-1280593_computer-user-icon-img-users.png"
+                    alt="User Profile"
+                    className="object-cover w-full h-full rounded-full border-2 border-gray-200"
+                  />
                 </div>
+                <div className="flex flex-col items-center text-center">
+                  <h1 className="text-xl font-semibold text-gray-800">
+                    {item.name}
+                  </h1>
+                  <span className="text-sm text-gray-600">{item.role}</span>
+                </div>
+                <div className="w-full h-px bg-gray-200"></div>
+                <button className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 rounded-md hover:bg-gray-200 transition duration-300">
+                  View Profile
+                </button>
               </div>
             </SwiperSlide>
           ))}

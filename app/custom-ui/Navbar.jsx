@@ -52,31 +52,23 @@ const Navbar = () => {
         </div>
       </div>
       {show && (
-        <motion.div
-          className="z-[99999]"
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-        >
-          <div className="w-screen h-screen bg-white text-black space-y-3 p-8 flex flex-col items-center fixed z-[999] top-0">
-            {lists.map((item, index) => (
-              <div
-                key={index}
-                className="w-full border-2 border-black p-3 rounded-full capitalize text-2xl text-center hover:bg-blue-500 transition-all ease-in-out duration-300 hover:border-red-300 hover:text-white"
-              >
-                <Link href={"#"}>{item.title}</Link>
-              </div>
-            ))}
-            <X
-              onClick={() => {
-                setShow(!show);
-              }}
-              size={80}
-              className="text-red-400 transition-all ease-in-out duration-700 rounded-full hover:bg-red-300"
-            />
-          </div>
-        </motion.div>
+        <div className="z-[999] w-screen h-screen bg-white text-black space-y-3 p-8 flex flex-col items-center fixed top-0">
+          {lists.map((item, index) => (
+            <div
+              key={index}
+              className="w-full border-2 border-black p-3 rounded-full capitalize text-2xl text-center hover:bg-blue-500 transition-all ease-in-out duration-300 hover:border-red-300 hover:text-white"
+            >
+              <Link href={"#"}>{item.title}</Link>
+            </div>
+          ))}
+          <X
+            onClick={() => {
+              setShow(!show);
+            }}
+            size={80}
+            className="text-red-400 transition-all ease-in-out duration-700 rounded-full hover:bg-red-300"
+          />
+        </div>
       )}
     </>
   );

@@ -2,10 +2,18 @@
 import { Button } from "@nextui-org/react";
 import { Globe } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const WorkExperience = () => {
   const works = [
+    {
+      title: "Career Study Web",
+      link: "careerstudy.in",
+      logo: "https://www.careerstudy.in/assets/logo/black-logo.png",
+      context:
+        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+    },
     {
       title: "Optimus Tea",
       link: "optimustea.com",
@@ -39,7 +47,9 @@ const WorkExperience = () => {
     <div className="w-full flex flex-col justify-center relative py-11">
       <div className="flex justify-between items-center">
         <h1 className="text-[25px] lg:text-[40px] py-11">Previous Works</h1>
-        <Button size="sm">More</Button>
+        <Button variant="flat" radius="full">
+          More
+        </Button>
       </div>
       <div className="work-details grid grid-cols-1 md:grid-cols-2 gap-5 z-10">
         {works.map((item, index) => {
@@ -61,11 +71,7 @@ const WorkExperience = () => {
                     <Globe size={15} />
                   </a>
                 </div>
-                <Image
-                  src="https://optimustea.com/assets/logo/Source/Optimus_tea_Logo-01.png"
-                  width={80}
-                  height={80}
-                />
+                <img src={item.logo} className="w-[70px] object-contain" />
               </div>
               <hr className=" opacity-20" />
               <p className="text-[12px]">
@@ -76,9 +82,12 @@ const WorkExperience = () => {
               </p>
               <div className="flex justify-between">
                 <span>Website</span>
-                <Button size={"sm"} className="text-black">
+                <Link
+                  href={"https://" + item.link}
+                  className="px-2 py-1 text-sm rounded-full bg-sky-500 size-sm"
+                >
                   Explore
-                </Button>
+                </Link>
               </div>
             </div>
           );

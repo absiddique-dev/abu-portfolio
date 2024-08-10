@@ -21,9 +21,10 @@ export function Roles() {
         Currently, I'm providing software solution all over the world
       </p>
       <p className="text-[15px] pt-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, commodi
-        dolore labore eligendi doloribus quidem, at vitae quos sed voluptates
-        dolorum architecto? Et dolorem numquam at id architecto voluptatum modi!
+        Full Stack web and app developers creating seamless digital experiences
+        in the fields of web applications, UI/UX, and user-centered design.
+        Transforming your ideas into impactful solutions that drive engagement
+        and growth.
       </p>
     </div>
   );

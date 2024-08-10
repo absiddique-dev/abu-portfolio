@@ -12,47 +12,42 @@ export function WobbleCardDemo() {
       >
         <div className="max-w-xs">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
+            Crafting Digital Experiences
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          <p className="mt-4 text-left text-base/6 text-neutral-200">
+            Our team specializes in creating high-performance, responsive
+            websites and mobile apps that drive engagement and growth. Trust us
+            to bring your vision to life with precision and creativity.
           </p>
         </div>
-        <Image
-          src="/linear.webp"
-          width={500}
-          height={500}
+        <img
+          src=""
           alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+          className="absolute -right-4 lg:-right-[40%] filter -bottom-10 object-contain rounded-2xl w-[300px]"
         />
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
+        <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          Innovating Beyond Boundaries
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+        <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+          In the world of digital creation, pushing limits is essential. But
+          when collaboration requires clarity, respect, and precision, we know
+          when to pause, reflect, and recalibrate.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
-          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+          <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            Digital Presence with Premier Web & App Development
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            Our team is dedicated to transforming your vision into reality with
+            expertly crafted websites and apps. We combine innovative design
+            with strategic development to deliver exceptional, user-centric
+            solutions that drive meaningful results and growth.
           </p>
         </div>
-        <Image
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-        />
       </WobbleCard>
     </div>
   );
