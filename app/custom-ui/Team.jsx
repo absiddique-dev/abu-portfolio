@@ -89,7 +89,7 @@ const Team = () => {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={5}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
