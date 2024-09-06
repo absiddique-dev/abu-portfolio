@@ -102,7 +102,7 @@ const Team = () => {
           freeMode={{ enabled: true, sticky: true }}
           modules={[Autoplay, Navigation, Mousewheel, FreeMode]}
           loop={true}
-          className="mySwiper w-full"
+          className="mySwiper w-full  "
         >
           {members?.map((item, index) => (
             <SwiperSlide key={index}>
