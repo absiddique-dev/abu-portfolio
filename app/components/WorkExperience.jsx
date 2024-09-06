@@ -8,39 +8,60 @@ import React from "react";
 const WorkExperience = () => {
   const works = [
     {
-      title: "Career Study Web",
+      title: "Ribub",
+      type: "App",
+      link: "",
+      logo: "",
+      context:
+        "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
+    },
+    {
+      title: "Career Study Admin",
+      type: "Website",
       link: "careerstudy.in",
       logo: "https://www.careerstudy.in/assets/logo/black-logo.png",
       context:
-        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+        "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
+    },
+    {
+      title: "Career Study Web",
+      type: "Website",
+      link: "careerstudy.in",
+      logo: "https://www.careerstudy.in/assets/logo/black-logo.png",
+      context:
+        "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
     },
     {
       title: "Optimus Tea",
+      type: "Website",
       link: "optimustea.com",
       logo: "https://optimustea.com/assets/logo/Source/Optimus_tea_Logo-01.png",
       context:
-        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+        "Created a high-performing e-commerce site for Optimus Tea, integrating secure payment gateways, inventory management, and a user-friendly interface, resulting in significant growth in online sales and customer satisfaction.",
     },
     {
       title: "Assam Job Portal",
+      type: "Website",
       link: "assamjobportal.com",
       logo: "https://optimustea.com/assets/logo/Source/Optimus_tea_Logo-01.png",
       context:
-        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+        "Built a dynamic job update website for Assam, featuring real-time job listings, application tracking, and employer-candidate matching, effectively bridging the gap between local businesses and job seekers.",
     },
     {
       title: "Assam Tet",
+      type: "Website",
       link: "assamtet.com",
       logo: "https://assamtet.com/assets/photos/assamtet-transparent.png",
       context:
-        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+        "Designed and implemented an advanced e-learning platform for Assam Teacher Eligibility Test preparation, offering mock tests, video lessons, and performance analytics to enhance candidates' exam readiness.",
     },
     {
       title: "Elavate Tax Solution",
+      type: "Website",
       link: "elavatetaxsolution.in",
       logo: "https://www.elavatetaxsolution.in/img/logo/elavate-banner.png",
       context:
-        "Developed and launched Optimus Tea's e-commerce website, enhancing user experience and boosting online sales through responsive design, SEO optimization, and robust e-commerce functionalities.",
+        "Developed a comprehensive website for Elavate Tax Solution, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
     },
   ];
   return (
@@ -68,20 +89,19 @@ const WorkExperience = () => {
                     rel="noopener noreferrer"
                   >
                     {item.link}
-                    <Globe size={15} />
+                    {item.link !== "" ? (
+                      <Globe size={15} />
+                    ) : (
+                      "Mobile Application"
+                    )}
                   </a>
                 </div>
                 <img src={item.logo} className="w-[70px] object-contain" />
               </div>
               <hr className=" opacity-20" />
-              <p className="text-[12px]">
-                Developed and launched Optimus Tea's e-commerce website,
-                enhancing user experience and boosting online sales through
-                responsive design, SEO optimization, and robust e-commerce
-                functionalities
-              </p>
+              <p className="text-[12px] h-16">{item?.context}</p>
               <div className="flex justify-between">
-                <span>Website</span>
+                <span>{item.type}</span>
                 <Link
                   href={"https://" + item.link}
                   className="px-2 py-1 text-sm rounded-full bg-sky-500 size-sm"
