@@ -85,7 +85,7 @@ const Team = () => {
         <TextGenerateEffect words={words} />
       </div>
 
-      <div className="w-full hidden lg:flex flex-col justify-center relative py-11 bg-[#12071F] px-5 md:px-11 lg:px-[200px]">
+      <div className="w-full hidden lg:flex flex-col justify-center relative py-11 bg-[#12071F]">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -143,7 +143,7 @@ const Team = () => {
         </Swiper>
       </div>
 
-      <div className="w-full lg:hidden flex-col justify-center relative py-11 bg-[#12071F] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-5 md:px-11 lg:px-[200px] gap-5">
+      <div className="w-full lg:hidden flex-col justify-center relative py-11 bg-[#12071F] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {members?.length > 4 &&
           members?.slice(0, 4).map((item, index) => (
             <div
