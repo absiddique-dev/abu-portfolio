@@ -51,6 +51,7 @@ const Team = () => {
       name: "Maksed Ali",
       role: "Frontend Developer",
       img: "/assests/team/maksed.png",
+      url: "https://maksed.vercel.app",
     },
     {
       name: "Saidur Rahman",
@@ -65,7 +66,11 @@ const Team = () => {
     },
     { name: "Mustafizur", role: "Software Engineer", img: "" },
     { name: "Rafiii", role: "Graphic Designer", img: "" },
-    { name: "Sadek", role: "Web Developer", img: "" },
+    {
+      name: "Sadek",
+      role: "Web Developer",
+      img: "/assests/team/sadek.png",
+    },
   ];
 
   useEffect(() => {

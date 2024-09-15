@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({ items, className }) => {
@@ -9,7 +8,7 @@ export const HoverEffect = ({ items, className }) => {
 
   return (
     <>
-      <div className="w-full flex flex-col justify-center">
+      <div className="w-full flex flex-col justify-center" id="services">
         <p className="text-center text-[#6F27BA] text-[15px]">
           How Can I help?
         </p>

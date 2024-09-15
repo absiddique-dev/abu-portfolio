@@ -11,7 +11,7 @@ const Navbar = () => {
     },
     {
       title: "Services",
-      link: "#",
+      link: "#services",
     },
     {
       title: "Recent Works",
@@ -19,15 +19,11 @@ const Navbar = () => {
     },
     {
       title: "Team",
-      link: "#",
-    },
-    {
-      title: "Review",
-      link: "#",
+      link: "#team",
     },
     {
       title: "About Me",
-      link: "#",
+      link: "/about-me",
     },
   ];
   const [show, setShow] = useState(false);
@@ -38,17 +34,25 @@ const Navbar = () => {
         <h1 className="text-[35px]">ABS</h1>
         <div className="lists hidden lg:flex justify-center items-center space-x-[60px] list-none">
           {lists.map((item, index) => (
-            <Link key={index} href={"#"}>
+            <Link key={index} href={item?.link ?? "#"}>
               {item.title}
             </Link>
           ))}
         </div>
-        <div className="flex lg:hidden">
-          <AlignRight
-            onClick={() => {
-              setShow(!show);
-            }}
-          />
+        <div className="flex items-center gap-x-3">
+          <a
+            href="https://wa.me/+916002618132/?text=Let%27s%20Talk"
+            className="bg-white text-black px-5 py-2 rounded-full"
+          >
+            Whatsapp
+          </a>
+          <div className="flex lg:hidden">
+            <AlignRight
+              onClick={() => {
+                setShow(!show);
+              }}
+            />
+          </div>
         </div>
       </div>
       {show && (

@@ -8,10 +8,26 @@ import React from "react";
 const WorkExperience = () => {
   const works = [
     {
+      title: "Graduate Farmer",
+      type: "Website",
+      link: "https://graduatefarmers.com/",
+      logo: "https://graduatefarmers.com/assets/logo/logo.png",
+      context:
+        "Developed a comprehensive website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
+    },
+    {
+      title: "SA Accounting",
+      type: "Website",
+      link: "",
+      logo: "/assests/logos/sa-accounting.png",
+      context:
+        "Developed a comprehensive website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
+    },
+    {
       title: "Ribub",
       type: "App",
       link: "",
-      logo: "",
+      logo: "/assests/logos/ribub-logo.png",
       context:
         "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
     },
@@ -67,7 +83,7 @@ const WorkExperience = () => {
   return (
     <div className="w-full flex flex-col justify-center relative py-11">
       <div className="flex justify-between items-center">
-        <h1 className="text-[25px] lg:text-[40px] py-11">Previous Works</h1>
+        <h2 className="text-[25px] lg:text-[40px] py-11">Previous Works</h2>
         <Button variant="flat" radius="full">
           More
         </Button>
@@ -81,7 +97,7 @@ const WorkExperience = () => {
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
-                  <p className="text-[20px]">{item.title}</p>
+                  <h3 className="text-[20px]">{item.title}</h3>
                   <a
                     className="text-[12px] flex gap-x-1"
                     href={`http://${item.link}`}
@@ -96,7 +112,10 @@ const WorkExperience = () => {
                     )}
                   </a>
                 </div>
-                <img src={item.logo} className="w-[70px] object-contain" />
+                <img
+                  src={item.logo}
+                  className="w-[70px] object-contain rounded-lg"
+                />
               </div>
               <hr className=" opacity-20" />
               <p className="text-[12px] h-16">{item?.context}</p>

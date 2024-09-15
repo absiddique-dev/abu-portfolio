@@ -1,17 +1,13 @@
 "use client";
 
-import { AlignRight } from "lucide-react";
-import Image from "next/image";
 import WorkExperience from "./components/WorkExperience";
-import Link from "next/link";
-import Services from "./components/Services";
+
 import { CardHoverEffectDemo } from "./custom-ui/CardHoverEffectDemo";
 import { Roles } from "./custom-ui/Roles";
-import { HeroHighlight, HeroHighlightComp } from "./custom-ui/HeroHighlight";
+import { HeroHighlightComp } from "./custom-ui/HeroHighlight";
 import { HeroParallaxDemo } from "./custom-ui/HeroParallax";
 import Team from "./custom-ui/Team";
 import Navbar from "./custom-ui/Navbar";
-import { TextGenerateEffectDemo } from "./custom-ui/TextGenerateEffect";
 import { WobbleCardDemo } from "./custom-ui/WobleCard";
 import Script from "next/script";
 
