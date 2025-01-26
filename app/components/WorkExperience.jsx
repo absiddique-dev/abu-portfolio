@@ -8,12 +8,44 @@ import React from "react";
 const WorkExperience = () => {
   const works = [
     {
-      title: "School Academia",
+      title: "Text To Image",
+      type: "AI/ML Application",
+      link: "/text-to-image",
+      logo: "",
+      context:
+        "I develop a text to image generator using hugging face api in my portfolio, you can exploye it by simply clicking on the link.",
+    },
+    {
+      title: "Bhaijaan Travel Agency",
+      type: "Travel Agency",
+      link: "",
+      logo: "/assests/logos/bta.jpeg",
+      context:
+        "I developed a complete travel agency website with admin panel, where the travel agency can upload all the details like packages, contacts, galleries etc from admin panel direcly",
+    },
+    {
+      title: "Academie App",
+      type: "School Management App",
+      link: "",
+      logo: "/assests/logos/academia.png",
+      context:
+        "I created a complete Academie App Application , In this project I used react js, node js, next js, tailwind, mysqli and many more technologies.",
+    },
+    {
+      title: "Recharge Up",
+      type: "Recharge Commission App",
+      link: "",
+      logo: "/assests/logos/recharge-up.png",
+      context:
+        "I am the developer of recharge up application. I build this application using varius tech stack , from core react native to complete application.",
+    },
+    {
+      title: "School Academie",
       type: "School Management System",
       link: "",
       logo: "/assests/logos/school-academia-logo.jpeg",
       context:
-        "I developed a complete school Management System , I got this client through reference. In this project i use html, css, javascript, node js, next js, react, mysqli and many more technologies.",
+        "I developed School Academie,  a complete school Management System. In this project i use html, css, javascript, node js, next js, react, mysqli and many more technologies.",
     },
     {
       title: "Graduate Farmer",
@@ -21,7 +53,7 @@ const WorkExperience = () => {
       link: "https://graduatefarmers.com/",
       logo: "https://graduatefarmers.com/assets/logo/logo.png",
       context:
-        "Developed a comprehensive website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
+        "Developed a comprehensive website for Graduate Farmer , featuring smooth e commerce website with dynamic admin panel, Where admin can direcly upload all the data and it will be reflect with second in the frontend website. I got this client through reference from my previous cliect",
     },
     {
       title: "SA Accounting",
@@ -29,7 +61,7 @@ const WorkExperience = () => {
       link: "",
       logo: "/assests/logos/sa-accounting.png",
       context:
-        "Developed a comprehensive website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
+        "Developed a brand new website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
     },
     {
       title: "Ribub",
@@ -83,7 +115,7 @@ const WorkExperience = () => {
       title: "Elavate Tax Solution",
       type: "Website",
       link: "elavatetaxsolution.in",
-      logo: "https://www.elavatetaxsolution.in/img/logo/elavate-banner.png",
+      logo: "",
       context:
         "Developed a comprehensive website for Elavate Tax Solution, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
     },
@@ -129,7 +161,7 @@ const WorkExperience = () => {
                     className="w-[50px] h-[50px] aspect-square object-contain rounded-lg"
                   />
                 ) : (
-                  <div className="w-[60px] h-[40px] aspect-square bg-zinc-300 text-black rounded-lg flex justify-center items-center">
+                  <div className="w-[50px] h-[50px] aspect-square object-contain rounded-lg text-sm bg-zinc-300 text-black flex justify-center items-center">
                     {item.title
                       .split(" ")
                       .map((word) => word[0])

@@ -7,23 +7,23 @@ const Navbar = () => {
   const lists = [
     {
       title: "Home",
-      link: "#",
+      link: "/#",
     },
     {
       title: "Services",
-      link: "#services",
+      link: "/#services",
     },
     {
       title: "Recent Works",
-      link: "#works",
+      link: "/#works",
     },
     {
       title: "Team",
-      link: "#team",
+      link: "/#team",
     },
     {
-      title: "About Me",
-      link: "/about-me",
+      title: "Text to Image",
+      link: "/text-to-image",
     },
   ];
   const [show, setShow] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="nav text-white flex fixed z-[99] w-full bg-transparent backdrop-blur-lg px-5 md:px-11 lg:px-[200px] justify-between items-center py-4 bg-[#1A0C2E]">
         <h1 className="text-[35px]">ABS</h1>
         <div className="lists hidden lg:flex justify-center items-center space-x-[60px] list-none">
-          {lists.map((item, index) => (
+          {lists?.map((item, index) => (
             <Link key={index} href={item?.link ?? "#"}>
               {item.title}
             </Link>
@@ -60,9 +60,12 @@ const Navbar = () => {
           {lists.map((item, index) => (
             <div
               key={index}
+              onClick={() => {
+                setShow(false);
+              }}
               className="w-full border-2 border-black p-3 rounded-full capitalize text-2xl text-center hover:bg-blue-500 transition-all ease-in-out duration-300 hover:border-red-300 hover:text-white"
             >
-              <Link href={"#"}>{item.title}</Link>
+              <Link href={item?.link}>{item.title}</Link>
             </div>
           ))}
           <X
