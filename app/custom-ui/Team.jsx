@@ -65,7 +65,11 @@ const Team = () => {
       url: "https://ajabbasi.in",
     },
     { name: "Mustafizur", role: "Software Engineer", img: "" },
-    { name: "Rafiii", role: "Graphic Designer", img: "" },
+    {
+      name: "Rafiii",
+      role: "Graphic Designer",
+      img: "/assests/team/rafi_mahruf.png",
+    },
     {
       name: "Sadek",
       role: "Web Developer",
@@ -82,7 +86,10 @@ const Team = () => {
   }, []);
   return (
     <>
-      <div className="w-full px-5 md:px-11 lg:px-[200px] flex flex-col justify-center relative bg-[#12071F]">
+      <div
+        className="w-full px-5 md:px-11 lg:px-[200px] flex flex-col justify-center relative bg-[#12071F]"
+        id="team"
+      >
         <h1 className="text-[25px] lg:text-[40px] py-5 text-center">
           Team of
           <FlipWords words={teamTitle} />
@@ -103,7 +110,7 @@ const Team = () => {
             clickable: true,
           }}
           navigation={false}
-          mousewheel={true}
+          mousewheel={false}
           freeMode={{ enabled: true, sticky: true }}
           modules={[Autoplay, Navigation, Mousewheel, FreeMode]}
           loop={true}

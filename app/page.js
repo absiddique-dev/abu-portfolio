@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="text-white">
       <Navbar />
-      <div className="main pt-[70px] px-5 md:px-11 lg:px-[200px] flex flex-col items-center py-4 bg-[#12071F] w-screen">
+      <div className="main pt-[70px] px-5 md:px-11 lg:px-[200px] flex flex-col items-center py-4 bg-[#12071F]">
         <div className="flex flex-col lg:flex-row justify-between items-center mt-11">
           <div className="relative">
             <div className="profile flex justify-center items-center w-[300px] h-[350px] rounded-full bg-gradient-radial from-[#483167] via-[#27104C] to-[#180931] shadow-2xl filter blur-xl relative"></div>

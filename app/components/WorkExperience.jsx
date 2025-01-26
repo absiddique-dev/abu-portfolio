@@ -8,6 +8,14 @@ import React from "react";
 const WorkExperience = () => {
   const works = [
     {
+      title: "School Academia",
+      type: "School Management System",
+      link: "",
+      logo: "/assests/logos/school-academia-logo.jpeg",
+      context:
+        "I developed a complete school Management System , I got this client through reference. In this project i use html, css, javascript, node js, next js, react, mysqli and many more technologies.",
+    },
+    {
       title: "Graduate Farmer",
       type: "Website",
       link: "https://graduatefarmers.com/",
@@ -59,7 +67,7 @@ const WorkExperience = () => {
       title: "Assam Job Portal",
       type: "Website",
       link: "assamjobportal.com",
-      logo: "https://optimustea.com/assets/logo/Source/Optimus_tea_Logo-01.png",
+      logo: "",
       context:
         "Built a dynamic job update website for Assam, featuring real-time job listings, application tracking, and employer-candidate matching, effectively bridging the gap between local businesses and job seekers.",
     },
@@ -81,7 +89,10 @@ const WorkExperience = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-col justify-center relative py-11">
+    <div
+      className="w-full flex flex-col justify-center relative py-11"
+      id="works"
+    >
       <div className="flex justify-between items-center">
         <h2 className="text-[25px] lg:text-[40px] py-11">Previous Works</h2>
         <Button variant="flat" radius="full">
@@ -97,10 +108,10 @@ const WorkExperience = () => {
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
-                  <h3 className="text-[20px]">{item.title}</h3>
+                  <h3 className="text-[20px]">{item?.title}</h3>
                   <a
                     className="text-[12px] flex gap-x-1"
-                    href={`http://${item.link}`}
+                    href={item?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -112,17 +123,26 @@ const WorkExperience = () => {
                     )}
                   </a>
                 </div>
-                <img
-                  src={item.logo}
-                  className="w-[70px] object-contain rounded-lg"
-                />
+                {item?.logo !== "" ? (
+                  <img
+                    src={item.logo}
+                    className="w-[50px] h-[50px] aspect-square object-contain rounded-lg"
+                  />
+                ) : (
+                  <div className="w-[60px] h-[40px] aspect-square bg-zinc-300 text-black rounded-lg flex justify-center items-center">
+                    {item.title
+                      .split(" ")
+                      .map((word) => word[0])
+                      .join("")}
+                  </div>
+                )}
               </div>
               <hr className=" opacity-20" />
               <p className="text-[12px] h-16">{item?.context}</p>
               <div className="flex justify-between">
                 <span>{item.type}</span>
                 <Link
-                  href={"https://" + item.link}
+                  href={item?.link}
                   className="px-2 py-1 text-sm rounded-full bg-sky-500 size-sm"
                 >
                   Explore

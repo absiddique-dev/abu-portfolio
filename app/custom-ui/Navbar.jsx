@@ -15,7 +15,7 @@ const Navbar = () => {
     },
     {
       title: "Recent Works",
-      link: "#",
+      link: "#works",
     },
     {
       title: "Team",
