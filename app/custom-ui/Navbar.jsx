@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="nav flex fixed z-[99] w-full bg-transparent backdrop-blur-lg px-5 md:px-11 lg:px-[200px] justify-between items-center py-4 bg-[#1A0C2E]">
+      <div className="nav text-white flex fixed z-[99] w-full bg-transparent backdrop-blur-lg px-5 md:px-11 lg:px-[200px] justify-between items-center py-4 bg-[#1A0C2E]">
         <h1 className="text-[35px]">ABS</h1>
         <div className="lists hidden lg:flex justify-center items-center space-x-[60px] list-none">
           {lists.map((item, index) => (
