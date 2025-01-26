@@ -34,7 +34,7 @@ const WorkExperience = () => {
     {
       title: "Recharge Up",
       type: "Recharge Commission App",
-      link: "",
+      link: "https://play.google.com/store/apps/details?id=imdos.rechup&hl=en_IN",
       logo: "/assests/logos/recharge-up.png",
       context:
         "I am the developer of recharge up application. I build this application using varius tech stack , from core react native to complete application.",
@@ -58,7 +58,7 @@ const WorkExperience = () => {
     {
       title: "SA Accounting",
       type: "Website",
-      link: "",
+      link: "https://www.easeurtax.com/",
       logo: "/assests/logos/sa-accounting.png",
       context:
         "Developed a brand new website for SA Accounting, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
@@ -74,7 +74,7 @@ const WorkExperience = () => {
     {
       title: "Career Study Admin",
       type: "Website",
-      link: "careerstudy.in",
+      link: "https://panel.careerstudy.in/admin",
       logo: "https://www.careerstudy.in/assets/logo/black-logo.png",
       context:
         "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
@@ -82,7 +82,7 @@ const WorkExperience = () => {
     {
       title: "Career Study Web",
       type: "Website",
-      link: "careerstudy.in",
+      link: "https://careerstudy.in",
       logo: "https://www.careerstudy.in/assets/logo/black-logo.png",
       context:
         "Developed a comprehensive online education platform featuring interactive courses, live tutoring, and personalized learning paths to revolutionize digital education and enhance student engagement.",
@@ -98,7 +98,7 @@ const WorkExperience = () => {
     {
       title: "Assam Job Portal",
       type: "Website",
-      link: "assamjobportal.com",
+      link: "https://assamjobportal.com",
       logo: "",
       context:
         "Built a dynamic job update website for Assam, featuring real-time job listings, application tracking, and employer-candidate matching, effectively bridging the gap between local businesses and job seekers.",
@@ -106,7 +106,7 @@ const WorkExperience = () => {
     {
       title: "Assam Tet",
       type: "Website",
-      link: "assamtet.com",
+      link: "https://assamtet.com",
       logo: "https://assamtet.com/assets/photos/assamtet-transparent.png",
       context:
         "Designed and implemented an advanced e-learning platform for Assam Teacher Eligibility Test preparation, offering mock tests, video lessons, and performance analytics to enhance candidates' exam readiness.",
@@ -114,7 +114,7 @@ const WorkExperience = () => {
     {
       title: "Elavate Tax Solution",
       type: "Website",
-      link: "elavatetaxsolution.in",
+      link: "https://elavatetaxsolution.in",
       logo: "",
       context:
         "Developed a comprehensive website for Elavate Tax Solution, featuring secure client portals, tax calculators, and resource libraries, streamlining financial services and improving client engagement.",
