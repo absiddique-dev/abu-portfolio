@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "../custom-ui/Navbar";
+import { Download } from "lucide-react";
 
 export default function TextToImage() {
   const [prompt, setPrompt] = useState("");
@@ -61,17 +62,44 @@ export default function TextToImage() {
 
         {error && <p className="text-red-500 mt-2">{error}</p>}
 
-        {imageUrl && (
+        {imageUrl && !isLoading ? (
           <div className="flex justify-center items-center">
             <div className="mt-4 w-1/2 aspect-square">
               <h2 className="text-lg font-bold mb-2">Generated Image:</h2>
-              <img
-                src={imageUrl}
-                alt="Generated"
-                className="border rounded-lg"
-              />
+              <div className="relative">
+                <img
+                  src={imageUrl}
+                  alt="Generated"
+                  className="border rounded-lg"
+                />
+                <div
+                  className="absolute right-3 bottom-3 cursor-pointer"
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = imageUrl;
+                    link.download = `${new Date().getTime()}.jpg`;
+                    link.click();
+                  }}
+                >
+                  <Download color="white" />
+                </div>
+              </div>
             </div>
           </div>
+        ) : (
+          isLoading && (
+            <div className="flex justify-center items-center">
+              <div className="mt-4 w-1/2 aspect-square">
+                <h2 className="text-lg font-bold mb-2">Generated Image:</h2>
+                <div className="relative">
+                  <div className="border rounded-lg bg-gray-300 animate-pulse aspect-square"></div>
+                  <div className="absolute right-3 bottom-3">
+                    <div className="bg-gray-300 rounded-full h-8 w-8 animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
         )}
       </div>
     </div>
