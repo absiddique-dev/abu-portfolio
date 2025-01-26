@@ -17,8 +17,8 @@ const WorkExperience = () => {
     },
     {
       title: "Bhaijaan Travel Agency",
-      type: "Travel Agency",
-      link: "",
+      type: "Website",
+      link: "https://www.bhaijaantravelagency.com/",
       logo: "/assests/logos/bta.jpeg",
       context:
         "I developed a complete travel agency website with admin panel, where the travel agency can upload all the details like packages, contacts, galleries etc from admin panel direcly",
